@@ -1,0 +1,11 @@
+@import "./base/_reset.scss";
+@import "./helper/mixin.scss";
+@import "./helper/variable.scss";
+@import "./layouts/detail.scss";
+@import "./layouts/index.scss";
+@import "./layouts/resigter.scss";
+@import "./helper/animation.scss";
+
+h1 {
+  color: blue;
+}
