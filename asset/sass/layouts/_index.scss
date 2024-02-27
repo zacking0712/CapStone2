@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    // position: relative; 
+    min-height: 100%;
+    font-size: 16px;
+  }
+  
+  body {
+    margin-bottom: 0px;
+    background-color: #f7f7f7;
+  }
+  
+  p {
+    margin: 0 0 16px;
+  }
+  
+  h2 {
+    margin: 0;
+  }
+  
+  .btn {
+    // position: relative; 
+    border: 0;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    color: black;
+    font-family: 'Muli';
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #294d5c;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .btn:hover {
+    outline: none;
+    background-color: #5f9db8;
+  }
+  .btn:focus {
+    outline: 0;
+    box-shadow: none !important;
+    /* box-shadow: 0 0 0 2px #404b61, inset 0 0 0 2px #ffffff; */
+  }
+  .btn:active {
+    transform: scale(0.95);
+  }
+  
+  .btn + .btn {
+    margin-left: 8px;
+  }
+  
+  header #navbarColor01 a {
+    transition: 0.3s all ease-in-out;
+  }
+  
+  header #navbarColor01 a:hover {
+    transform: scale(1.15);
+  }
+  
+  .nav1 {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  
+  .nav2 {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: black;
+  }
+
+  .banner-left {
+    width: 65%;
+  }
+  .banner-right {
+    width: 35%;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
