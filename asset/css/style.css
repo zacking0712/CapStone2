@@ -1,13 +1,12 @@
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-html {
-  min-height: 100%;
-  font-size: 16px;
-}
+
+
 
 body {
   margin-bottom: 0px;
@@ -21,6 +20,8 @@ p {
 h2 {
   margin: 0;
 }
+
+
 
 .btn {
   border: 0;
@@ -57,6 +58,10 @@ h2 {
   margin-left: 8px;
 }
 
+header .navbar {
+  background-color: #000;
+}
+
 header #navbarColor01 a {
   transition: 0.3s all ease-in-out;
 }
@@ -71,8 +76,15 @@ header #navbarColor01 a:hover {
   width: 100%;
 }
 
+
 .navbar {
+
+.nav2 {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
   background-color: black;
+}
 }
 
 .banner-left {
@@ -127,6 +139,283 @@ header #navbarColor01 a:hover {
   margin: 0;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+header .container-fluid {
+  background-color: #0E0E0E;
+}
+header .container-fluid .logo {
+  margin: 10px 0;
+}
+header a {
+  color: white !important;
+  line-height: 2;
+}
+
+body {
+  background-color: white !important;
+}
+
+.chooseSex {
+  margin-bottom: 30px;
+}
+.chooseSex .nav-item {
+  position: relative;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.chooseSex .active::after {
+  width: 100%;
+}
+.chooseSex .nav-item::after {
+  position: absolute;
+  content: "";
+  background-color: red;
+  height: 3px;
+  bottom: 1px;
+  right: 0;
+  transition: all 0.8s;
+}
+.chooseSex .nav-item:hover::after {
+  width: 100%;
+}
+.chooseSex .nav-item:hover a {
+  color: #0E0E0E;
+}
+
+.detailProduct {
+  margin-bottom: 30px;
+}
+.detailProduct .container {
+  display: block;
+}
+.detailProduct .content_Product {
+  display: flex;
+}
+.detailProduct .content_Product .left_product {
+  background-color: #F8F8F8;
+  width: 30%;
+  position: relative;
+}
+.detailProduct .content_Product .left_product img {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 40px;
+}
+.detailProduct .content_Product .right_product {
+  width: 70%;
+  margin-left: 30px;
+}
+.detailProduct .content_Product .right_product .option_SizeProduct {
+  margin-bottom: 20px;
+}
+.detailProduct .content_Product .right_product .option_SizeProduct h4 {
+  color: #1ED90E;
+  margin-bottom: 20px;
+}
+.detailProduct .content_Product .right_product .option_SizeProduct .chooseSize button {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  color: #1E1D1D;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.detailProduct .content_Product .right_product .addToCart h2 {
+  color: #FC0303;
+  margin-bottom: 20px;
+}
+.detailProduct .content_Product .right_product .addToCart .chooseNumber {
+  margin-bottom: 20px;
+}
+.detailProduct .content_Product .right_product .addToCart .chooseNumber button {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  background-color: #6181F3;
+  color: white;
+}
+.detailProduct .content_Product .right_product .addToCart .chooseNumber span {
+  font-size: 30px;
+  margin: 0 20px;
+}
+.detailProduct .content_Product .right_product .addToCart .addCart {
+  font-size: 20px;
+  color: white;
+  width: 175px;
+  height: 65px;
+  background: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
+}
+
+.relateProduct .container {
+  display: flex;
+  flex-direction: column;
+}
+.relateProduct h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.relateProduct .content_relate {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.relateProduct .content_relate .item_sneaker {
+  background-color: #F8F8F8;
+  margin: 20px;
+}
+.relateProduct .content_relate .item_sneaker .inforSneaker {
+  padding: 30px 30px 10px 30px;
+}
+.relateProduct .content_relate .item_sneaker .inforSneaker img {
+  width: 100%;
+}
+.relateProduct .content_relate .item_sneaker .inforSneaker p:nth-child(3) {
+  color: #CBC9C9;
+}
+.relateProduct .content_relate .item_sneaker .inforSneaker p:nth-child(2) {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.relateProduct .content_relate .item_sneaker .buySneaker {
+  display: flex;
+}
+.relateProduct .content_relate .item_sneaker .buySneaker button {
+  height: 50px;
+  width: 50%;
+  background-color: #E1B067;
+}
+.relateProduct .content_relate .item_sneaker .buySneaker .amount {
+  width: 50%;
+  background-color: #DEDDDC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.relateProduct .content_relate .item_sneaker .buySneaker .amount span {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+footer {
+  margin-top: 50px;
+}
+footer .footer_content h3 {
+  font-size: 20px;
+}
+footer .footer_content p {
+  font-size: 13px;
+}
+footer .footer_content .item_top {
+  background-color: #FAFAFA;
+}
+footer .footer_content .item_top .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+footer .footer_content .item_top .container .itemFooter {
+  margin: 30px;
+}
+footer .footer_content .item_top .container .itemFooter a {
+  text-decoration: none;
+  color: black;
+}
+footer .footer_content .item_top .container .itemFooter a:hover {
+  color: #6181F3;
+}
+footer .footer_content .item_top .container .itemFooter ul {
+  padding-left: 0;
+}
+footer .footer_content .item_top .container .itemFooter ul li {
+  list-style: none;
+}
+footer .footer_content .item_top .container .itemFooter ul li:hover a {
+  color: #6181F3;
+}
+footer .footer_content .item_bottom {
+  background-color: #ECECEC;
+}
+footer .footer_content .item_bottom .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+footer .footer_content .item_bottom .container .itemFooter {
+  margin: 30px;
+}
+footer .footer_content .item_bottom .container .itemFooter a {
+  text-decoration: none;
+  color: red;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .relateProduct .item_sneaker:nth-child(3) .buySneaker {
+    margin-top: 28px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+  header .container-fluid button {
+    position: absolute;
+    top: 22px;
+    right: 10px;
+  }
+  header .container-fluid button span {
+    background-color: white;
+  }
+  .chooseSex .collapse {
+    display: block;
+  }
+  .chooseSex .collapse .navbar-nav {
+    flex-direction: row;
+  }
+  .detailProduct .content_Product .left_product {
+    width: 50%;
+  }
+  .detailProduct .content_Product .right_product {
+    width: 50%;
+  }
+  .detailProduct .content_Product .right_product .addToCart h2 {
+    margin-bottom: 10px;
+  }
+  .detailProduct .content_Product .right_product .addToCart .chooseNumber button {
+    width: 30px;
+    height: 35px;
+    font-size: 23px;
+  }
+  .detailProduct .content_Product .right_product .addToCart .addCart {
+    font-size: 17px;
+    color: white;
+    width: 130px;
+    height: 50px;
+  }
+  .detailProduct .content_Product .right_product .option_SizeProduct {
+    margin-bottom: 5px;
+  }
+  .detailProduct .content_Product .right_product .option_SizeProduct h4 {
+    margin-bottom: 10px;
+  }
+  .detailProduct .content_Product .right_product .option_SizeProduct .chooseSize button {
+    width: 31px;
+    height: 31px;
+  }
+  .detailProduct .content_Product .right_product .infor_Product p {
+    margin: 0 0 5px;
+  }
+  .relateProduct .content_relate {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .relateProduct .content_relate .item_sneaker:nth-child(2) .buySneaker {
+    margin-top: 28px;
+  }
+}
+
+
 html {
   min-height: 100%;
   font-size: 16px;
@@ -145,21 +434,7 @@ h2 {
   margin: 0;
 }
 
-.btn {
-  border: 0;
-  padding: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 3px;
-  color: black;
-  font-family: "Muli";
-  font-size: 14px;
-  line-height: 14px;
-  background-color: #294d5c;
-  cursor: pointer;
-  transition: all 0.15s;
-}
+
 
 .btn:hover {
   outline: none;
@@ -178,6 +453,11 @@ h2 {
 
 .btn + .btn {
   margin-left: 8px;
+
+
+
+header .navbar {
+  background-color: #000;
 }
 
 header #navbarColor01 a {
@@ -194,17 +474,28 @@ header #navbarColor01 a:hover {
   width: 100%;
 }
 
+
 .navbar {
+
+.nav2 {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+
   background-color: black;
 }
 
 .banner-left {
   width: 65%;
+
   margin-left: 30px;
+
+
 }
 
 .banner-right {
   width: 35%;
+
   padding-left: 20px;
 }
 
@@ -242,8 +533,149 @@ header #navbarColor01 a:hover {
 .Proname {
   text-align: center;
   margin: 24px;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+
+h1 {
+  color: blue;
+}/*# sourceMappingURL=style.css.map */
+
+  
+.register {
+  margin-top: 100px;
+  padding: 0 50px;
+}
+.register h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.register select {
+  padding: 6px 13px;
+  font-size: 16px;
+  opacity: 0.8;
+}
+.register label {
+  font-weight: 700;
+}
+.register small {
+  color: red !important;
+}
+
+.footer {
+  margin-top: 20px;
+  background-color: #24262b;
+  padding: 70px 0;
+}
+.footer .footer_bot .footer-col {
+  width: 33.3333333333%;
+  padding: 0 30px;
+  padding-right: 70px;
+}
+.footer .footer-col {
+  width: 25%;
+  padding: 0 30px;
+}
+.footer .footer-col p {
+  color: #bbbbbb;
+}
+.footer .footer-col span a {
+  text-decoration: none;
+  color: #862247;
+}
+.footer .footer-col span a:hover {
+  text-decoration: underline;
+}
+.footer .footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer .footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer .footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+.footer .footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer .footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer .footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer .footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer .footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 576px) {
+  .register form div {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .register .btn_main button {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer .footer_bot .footer-col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer .footer-col {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer .footer-col:last-child {
+    margin-top: 20px;
+  }
 }
 
 h1 {
   color: blue;
+
 }/*# sourceMappingURL=style.css.map */
