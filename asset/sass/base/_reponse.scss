@@ -1,0 +1,39 @@
+.register {
+    form {
+        div {
+            @media screen and (max-width: 576px) {
+                width: 100% !important;
+            }
+        }
+    }
+
+    .btn_main {
+        button {
+            @media screen and (max-width: 576px) {
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+.footer {
+    .footer_bot {
+        .footer-col {
+            @media screen and (max-width: 576px) {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .footer-col {
+        @media screen and (max-width: 576px) {
+            width: 100%;
+        }
+        &:last-child {
+            @media screen and (max-width: 576px) {
+                margin-top: 20px;
+            }
+        }
+    }
+
+}

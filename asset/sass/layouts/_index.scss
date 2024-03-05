@@ -20,38 +20,43 @@
   h2 {
     margin: 0;
   }
+
   
-  .btn {
-    // position: relative; 
-    border: 0;
-    padding: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 3px;
-    color: black;
-    font-family: 'Muli';
-    font-size: 14px;
-    line-height: 14px;
-    background-color: #294d5c;
-    cursor: pointer;
-    transition: all 0.15s;
-  }
-  .btn:hover {
-    outline: none;
-    background-color: #5f9db8;
-  }
-  .btn:focus {
-    outline: 0;
-    box-shadow: none !important;
-    /* box-shadow: 0 0 0 2px #404b61, inset 0 0 0 2px #ffffff; */
-  }
-  .btn:active {
-    transform: scale(0.95);
-  }
+  // .btn {
+  //   // position: relative; 
+  //   border: 0;
+  //   padding: 16px;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   border-radius: 3px;
+  //   color: black;
+  //   font-family: 'Muli';
+  //   font-size: 14px;
+  //   line-height: 14px;
+  //   background-color: #294d5c;
+  //   cursor: pointer;
+  //   transition: all 0.15s;
+  // }
+  // .btn:hover {
+  //   outline: none;
+  //   background-color: #5f9db8;
+  // }
+  // .btn:focus {
+  //   outline: 0;
+  //   box-shadow: none !important;
+  //   /* box-shadow: 0 0 0 2px #404b61, inset 0 0 0 2px #ffffff; */
+  // }
+  // .btn:active {
+  //   transform: scale(0.95);
+  // }
   
-  .btn + .btn {
-    margin-left: 8px;
+  // .btn + .btn {
+  //   margin-left: 8px;
+  // }
+
+  header .navbar {
+    background-color: #000;
   }
   
   header #navbarColor01 a {
@@ -81,6 +86,7 @@
   .banner-right {
     width: 35%;
   }
+
   .container {
     display: flex;
     flex-direction: row;
