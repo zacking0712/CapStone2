@@ -1,10 +1,10 @@
 @import "./layouts/_index.scss";
-@import "./helper/mixin.scss";
-@import "./helper/variable.scss";
-@import "./layouts/detail.scss";
-@import "./layouts/index.scss";
-@import "./layouts/resigter.scss";
-@import "./helper/animation.scss";
-h1 {
-  color: blue;
-}
+@import "./helper/_mixin.scss";
+@import "./helper/_variable.scss";
+@import "./layouts/_detail.scss";
+@import "./layouts/_index.scss";
+@import "./layouts/_resigter.scss";
+@import "./helper/_animation.scss";
+@import "./base/_reset.scss";
+@import "./base/_reponse.scss";
+
