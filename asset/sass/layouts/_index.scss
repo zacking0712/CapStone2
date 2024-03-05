@@ -56,7 +56,7 @@
     margin-left: 8px;
   }
   
-  // --------Navbar-----------
+// --------Navbar-----------
 
 header #navbarColor01 a {
   transition: 0.3s all ease-in-out;
@@ -72,16 +72,9 @@ header #navbarColor01 a:hover {
   width: 100%;
 }
 
-.nav2 {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  background-color: black;
-}
 .navbar {
   background-color: black;
 }
-
 
 //----------Banner------------
 
@@ -94,6 +87,7 @@ header #navbarColor01 a:hover {
 .banner-right {
   width: 35%;
   // background-color: orange;
+  padding-left: 20px;
 }
 
 .container1 {

@@ -7,7 +7,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-  
+
 
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -16,10 +16,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"
     integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Font Awsome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <!-- link css -->
   <link rel="stylesheet" href="../../asset/css/style.css" />
-  </head>
+</head>
 
 <body>
   <header> <!--fixed-top-->
@@ -36,38 +38,34 @@
 
         <div class="collapse navbar-collapse" id="navbarColor01">
           <ul class="navbar-nav me-auto nav1">
-            <li class="nav-item text-center mx-5">
-              <a class="nav-link active" href="../../index.html" role="button" aria-haspopup="true"
+            <li class="nav-item text-center mx-2 fs-5">
+              <a class="nav-link js-toggle-cart active contentitem" href="#" role="button" aria-haspopup="true"
                 aria-expanded="false">
                 <div>
-                  <i class="fas fa-home fa-xl mb-1"></i>
-                </div>
-                LOGIN
-              </a>
-            </li>
-
-            <li class="nav-item text-center">
-              <a class="nav-link active" href="./resigter.html" role="button" aria-haspopup="true"
-                aria-expanded="false">
-                <div>
-                  <i class="fa-solid fa-xl fa-user-gear"></i>
-                </div>
-                REGISTER
-              </a>
-            </li>
-          </ul>
-          <ul class="navbar-nav me-auto nav2">
-            <li class="nav-item text-center">
-              <a class="nav-link js-toggle-cart active" href="./detail.html" role="button" aria-haspopup="true"
-                aria-expanded="false">
-                <div>
-                  <i class="fa-solid fa-xl fa-shopping-cart"></i>
+                  <i class="fa-solid fa-cart-shopping"></i>
                   <span class="badge rounded-pill badge-notification bg-light text-dark" id="cartCount"></span>
                 </div>
-                CART
+
               </a>
             </li>
+            <li class="nav-item text-center mx-2 fs-5">
+              <a class="nav-link active " href="#" role="button" aria-haspopup="true"
+                aria-expanded="false">
+
+                Login
+              </a>
+            </li>
+            <li class="nav-item text-center mx-2 fs-5">
+              <a class="nav-link active " href="#" role="button" aria-haspopup="true"
+                aria-expanded="false">
+                Register
+              </a>
+            </li>
+            
           </ul>
+          <!-- <ul class="navbar-nav me-auto nav2">
+            
+          </ul> -->
         </div>
       </div>
     </nav>
@@ -89,7 +87,7 @@
         <img width="100%" src="../image/eceeac395b345ee158dadabb89414849.png" alt="">
       </div>
       <div class="banner-right">
-        <h5>Product name</h5>
+        <h2>Product name</h2>
         <p>Product description ...</p>
         <button class="btnPname">Buy now</button>
       </div>
@@ -97,9 +95,10 @@
   </div>
   <main>
     <h2 class="Proname">-Product Feature-</h2>
+    
   </main>
   <footer>
-    <img width="100%" src="../image/98e06653cc6708fc0358162b13e17c63.png" alt="" >
+    <img width="100%" src="../image/98e06653cc6708fc0358162b13e17c63.png" alt="">
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -109,6 +108,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
     </script>
+
+
 
   <script>
     // toggle shopping cart
