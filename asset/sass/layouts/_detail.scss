@@ -1,0 +1,318 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+header{
+    .container-fluid{
+        background-color:#0E0E0E;
+        .logo{
+            margin:10px 0;
+        }
+    }
+    a{
+        color:white !important;
+         line-height: 2;
+    }
+}
+body{
+    background-color: white !important;
+}
+.chooseSex{
+    // background-color: white !important;
+
+    .nav-item{
+        position: relative;
+        margin-right: 10px;
+        font-size: 20px;
+    }
+    .active::after{
+        width:100%;
+    }
+    .nav-item::after{
+        position:absolute;
+        content:"";
+        background-color: red;
+        height:3px;
+        bottom:1px;
+        right:0;
+        transition:all 0.8s;
+    }
+    .nav-item:hover::after{
+        width:100%;
+    }
+    .nav-item:hover a{
+        color:#0E0E0E;
+    }
+    margin-bottom: 30px;
+}
+.detailProduct{
+    // background-color: white;
+    margin-bottom: 30px;
+    .container{
+        display:block;
+    }
+    .content_Product{
+        display:flex;
+        .left_product{
+            background-color:#F8F8F8;
+            width:30%;
+            position: relative;  
+            img{
+                width:100%;
+                position: absolute;
+                left:0px;
+                top:40px;
+            }
+        }
+        .right_product{
+            width:70%;
+            margin-left:30px;
+            .option_SizeProduct{
+                margin-bottom: 20px;
+                h4{
+                    color: #1ED90E;
+                    margin-bottom: 20px;
+                }
+                .chooseSize{
+                    button{
+                        width:50px;
+                        height:50px;
+                        margin-right:10px;
+                        color:#1E1D1D;
+                        font-weight:600;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            .addToCart{
+                h2{
+                   color: #FC0303;
+                   margin-bottom: 20px;
+                }
+                .chooseNumber{
+                    margin-bottom: 20px;
+                    button{
+                        width:50px;
+                        height:50px;
+                        font-size: 30px;
+                        background-color: #6181F3;
+                        color:white;
+                    }
+                    span{
+                        font-size:30px;
+                        margin:0 20px;  
+                    }
+                }
+                .addCart{
+                    font-size: 20px;
+                    color:white;
+                    width: 175px;
+                    height: 65px;
+                    background: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
+                }
+            }
+        }
+    }
+}
+.relateProduct{
+   .container{
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+   }
+    h2{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        margin-bottom: 30px;
+    }
+    .content_relate{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        // grid-template-rows: repeat(1, 1fr);
+        .item_sneaker{
+            background-color: #F8F8F8;
+            margin:20px;
+            .inforSneaker{
+                padding:30px 30px 10px 30px;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                img{
+                    width:100%;
+                }
+                p:nth-child(3){
+                    color: #CBC9C9;
+                }
+                p:nth-child(2){
+                    font-size:20px;
+                    margin-bottom: 5px;
+                }
+            }
+            .buySneaker{
+                display: flex;
+                button{
+                    // width:175px;
+                    height:50px;
+                    width:50%;
+                    background-color: #E1B067;
+                }
+                .amount{
+                    width:50%;
+                    background-color: #DEDDDC;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    span{
+                        font-size: 24px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+footer{
+    margin-top: 50px;
+    .footer_content{
+        h3{
+            font-size:20px;
+        }
+        p{
+            font-size:13px;
+        }
+        .item_top{
+            background-color: #FAFAFA;
+            .container{
+                // background-color: #FAFAFA;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        // grid-template-rows: repeat(2, 1fr);
+            .itemFooter{
+            margin: 30px;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            a:hover{
+                color:#6181F3;
+            }
+            ul{
+                padding-left: 0;
+                li{
+                    list-style: none;
+                }
+                li:hover{
+                    a{
+                        color:#6181F3;
+                    }
+                }
+            }
+            }
+            }
+        }
+        .item_bottom{
+            background-color: #ECECEC;
+            .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            .itemFooter{
+                margin:30px;
+                a{
+                    text-decoration: none;
+                    color:red;
+                }
+            }
+            }
+        }
+    }
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .relateProduct{
+        .item_sneaker:nth-child(3){
+            .buySneaker{
+                margin-top: 28px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 375px) and (max-width:768px) {
+    header{
+        .container-fluid{
+            button{
+                position:absolute;
+                top:22px;
+                right: 10px;
+               span{ 
+                background-color:white;
+                }
+            }
+        }
+    }
+    .chooseSex{
+        .collapse{
+            display: block;
+            .navbar-nav{
+                flex-direction: row;
+            }
+        }
+    }
+    .detailProduct{
+        .content_Product{
+            .left_product{
+                width:50%;
+            }
+            .right_product{
+                width:50%;
+                .addToCart{
+                    h2{
+                        margin-bottom: 10px;
+                    }
+                    .chooseNumber{
+                        button{
+                            width: 30px;
+                            height: 35px;
+                            font-size: 23px;
+                        }
+                     }
+                    .addCart{
+                        font-size: 17px;
+                        color: white;
+                        width: 130px;
+                        height: 50px;
+                    }
+                }
+                .option_SizeProduct{
+                    margin-bottom: 5px;
+                    h4{
+                        margin-bottom: 10px;
+                    }
+                    .chooseSize{
+                        button{
+                            width:31px;
+                            height: 31px;
+                        }
+                    }
+                }
+                .infor_Product{
+                    p{
+                        margin:0 0 5px;
+                    }
+                }
+            }
+        }
+    }
+    .relateProduct{
+        .content_relate{
+            grid-template-columns: repeat(2, 1fr);
+            .item_sneaker:nth-child(2){
+                .buySneaker{
+                    margin-top: 28px;
+                }
+            }
+        }
+    }
+}
