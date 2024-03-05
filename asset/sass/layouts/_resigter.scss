@@ -1,0 +1,118 @@
+.register {
+    margin-top: 100px;
+    padding: 0 50px;
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    select {
+        padding: 6px 13px;
+        font-size: 16px;
+        opacity: 0.8;
+    }
+
+    label {
+        font-weight: 700;
+    }
+
+    small {
+        color: red !important;
+    }
+}
+
+.footer {
+    margin-top: 20px;
+    background-color: #24262b;
+    padding: 70px 0;
+
+    .footer_bot {
+        .footer-col {
+            width: calc(100%/3);
+            padding: 0 30px;
+            padding-right: 70px;
+        }
+    }
+
+    .footer-col {
+        width: 25%;
+        padding: 0 30px;
+        p {
+            color: #bbbbbb;
+        }
+
+        span {
+            a {
+                text-decoration: none;
+                color: #862247;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        h4 {
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 500;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                left:0;
+                bottom: -10px;
+                background-color: #e91e63;
+                height: 2px;
+                box-sizing: border-box;
+                width: 50px;
+            }
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            li {
+
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+
+                a {
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-weight: 300;
+                    color: #bbbbbb;
+                    display: block;
+                    transition: all 0.3s ease;
+                    &:hover {
+                        color: #ffffff;
+	                    padding-left: 8px;
+                    }
+                }
+            }
+        }
+
+        .social-links {
+            a {
+                display: inline-block;
+                height: 40px;
+                width: 40px;
+                background-color: rgba(255,255,255,0.2);
+                margin:0 10px 10px 0;
+                text-align: center;
+                line-height: 40px;
+                border-radius: 50%;
+                color: #ffffff;
+                transition: all 0.5s ease;
+                &:hover {
+                    color: #24262b;
+	                background-color: #ffffff;
+                }
+            }
+        }
+    }
+}
