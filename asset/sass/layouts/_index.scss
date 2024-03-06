@@ -57,6 +57,14 @@ h2 {
 //   margin-left: 8px;
 // }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
 header .navbar {
   background-color: #000;
 }
