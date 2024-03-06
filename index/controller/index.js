@@ -39,10 +39,10 @@ function renderList() {
                                  <h5 class="card-title pt-3">${shoes.name}</h5>
                                <span class="text-muted mb-2">$${shoes.shortDescription}</span>          
                            </div>   
-                           <div class="hienthitien">
+                           <div class="hienthitien d-flex justify-content-center flex-column align-items-center">
+                           <span class="my-3" > ${shoes.price} $ </span>
                             <a href='../../detail/view/detail.html?product=${shoesId}' class="btn btn-block w-50 btnPname" >Buy now</a>
                             
-                            <span > $85 </span>
                            </div> 
                        </div>
                    </div>
