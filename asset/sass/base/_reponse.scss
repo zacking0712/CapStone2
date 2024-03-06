@@ -1,4 +1,4 @@
-.resigter {
+.register {
     div {
         @media screen and (max-width: 576px) {
             width: 100% !important;
@@ -12,35 +12,25 @@
     }
 }
 
-footer {
-    .footer_top,
+
+.footer {
     .footer_bot {
-        .footer_items {
-            .footer_item {
-                &:nth-child(2) {
-                    
-                    @media screen and (max-width:576px) {
-                        border-left: none !important;
-                        border-right: none !important;
-                        border-top: 3px solid #ccc;
-                        border-bottom: 3px solid #ccc;
-                        padding: 20px 0 !important;
-                    }
-                }
-
-                &:nth-child(1),
-                &:nth-child(3) {
-                    @media screen and (max-width:576px) {
-                        margin: 20px 0;
-                    }
-                }
+        .footer-col {
+            @media screen and (max-width: 576px) {
+                width: 100%;
+                margin-bottom: 20px;
             }
-
-            @media screen and (max-width:576px) {
-                display: block !important;
-            }
-            
-            
         }
     }
+    .footer-col {
+        @media screen and (max-width: 576px) {
+            width: 100%;
+        }
+        &:last-child {
+            @media screen and (max-width: 576px) {
+                margin-top: 20px;
+            }
+        }
+    }
+
 }

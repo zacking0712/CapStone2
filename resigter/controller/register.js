@@ -20,7 +20,7 @@ function getInfoInput() {
     //Check Password
     isValid &= checkEmpty(user.password, "noti_password", "password") && checkPassword(user.password, "noti_password", "password")
     //Check Phone
-    isValid &= checkEmpty(user.phone, "noti_phone", "phone") && checkPhone(user.phone, "noti_phone", "phone", 10)
+    isValid &= checkEmpty(user.phone, "noti_phone", "phone") && checkPhone(user.phone, "noti_phone", 10)
     //Check Password Confirm
     isValid &= checkEmpty(user.password_cf, "noti_pass_cf", "password_cf") && checkPasswordConfirm(user.password, user.password_cf, "noti_pass_cf", "password_cf")
     //Check Gender
@@ -43,6 +43,8 @@ function getInfoInput() {
             console.log(err)
         })
     }
+
+    document.querySelector("form").reset()
 }
 
 document.querySelector(".btn-dark").onclick = getInfoInput
