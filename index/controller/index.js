@@ -7,7 +7,7 @@ import { Product } from '../model/product.js';
 const service = new Service();
 let cart = [];
 
-function renderList() { 
+function renderList() {
   let promise = axios({
     url: '../../admin/data/sneaker.json',
     method: "GET",
@@ -23,11 +23,12 @@ function renderList() {
       console.log(divShoesList)
       // Danh sách các sản phẩm từ API
       let arrShoes = res.data.content
-      console.log(arrShoes)
-      let content=""
+      let content = ""
       // Render danh sách giày từ API
       for (const shoes of arrShoes) {
-        console.log(shoes);
+        let shoesId = shoes.id;
+        console.log(shoesId);
+        // console.log(shoes);
         content += `
         <div class="col-lg-3 col-md-6">
                   <div class="card text-black h-100">
@@ -37,15 +38,19 @@ function renderList() {
                            <div class="text-center">
                                  <h5 class="card-title pt-3">${shoes.name}</h5>
                                <span class="text-muted mb-2">$${shoes.shortDescription}</span>          
-                           </div>    
-                           <button type="button" class="btn btn-dark w-100 my-3" onclick ="btnAddToCart('${shoes.id}')">Mua ngay</button>
+                           </div>   
+                           <div class="hienthitien">
+                            <a href='../../detail/view/detail.html?product=${shoesId}' class="btn btn-block w-50 btnPname" >Buy now</a>
+                            
+                            <span > $85 </span>
+                           </div> 
                        </div>
                    </div>
                </div>
         
       </div>`
       }
-      divShoesList.innerHTML=content
+      divShoesList.innerHTML = content
 
 
     })
