@@ -2,6 +2,13 @@ var numberSneaker=1;
 var priceSneaker=0;
 var quantitySneaker=0;
 var totalSize=0;
+const searchParams = new URLSearchParams(window.location.search);
+
+// Lấy giá trị của tham số `product`
+const productId = searchParams.get("product");
+
+// Chuyển đổi giá trị sang kiểu số
+var number = parseInt(productId);
 function getDataJson(){
     var promise=axios({
         url:'https://shop.cyberlearn.vn/api/Product',
@@ -82,7 +89,7 @@ function renderDetailProduct(str){
         console.log(err);
     })
 };
-renderDetailProduct(1);
+renderDetailProduct(number);
 // var strPrice=document.querySelector(".priceSneaker").innerHTML;
 function handelPlusOrMinus(str){
   // console.log(priceSneaker);
